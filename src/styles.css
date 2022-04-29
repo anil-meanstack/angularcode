@@ -1,0 +1,56 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+body{
+    background-color: #e9ecef;
+} 
+.login-page{
+    align-items: center;
+    background-color: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+} 
+.login-box{
+    width: 360px;
+} 
+.login-logo{
+    font-size: 2.1rem;
+    font-weight: 300;
+    margin-bottom: 0.9rem;
+    text-align: center;
+}
+.login-card-body {
+    background-color: #fff;
+    border-top: 0;
+    color: #666;
+    padding: 20px;
+}
+.login-box-msg{
+    margin: 0;
+    padding: 0 20px 20px;
+    text-align: center;
+}       
+
+.mb-3{
+    margin-bottom: 1rem!important;
+}
+
+
+.card {
+    position: relative;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    box-shadow: none;
+}
