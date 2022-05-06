@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormControlName, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl,FormControl, FormControlName, FormGroup, Validators } from '@angular/forms';
 import {Router}from '@angular/router'
 @Component({
   selector: 'app-login',
@@ -18,8 +18,15 @@ export class LoginComponent implements OnInit {
       password: new FormControl('',[Validators.required])
     });
   }
+  get input():{ [key: string]: AbstractControl }{
+    return this.data.controls;
+
+  }
   datafunctuion(){
-    console.log(this.data.value);
-    this._router.navigateByUrl('/dashboad');
+    console.log(this.data.valid);
+    if(this.data.valid){
+      this._router.navigateByUrl('/dashboad');
+    }
+    
   }
 }

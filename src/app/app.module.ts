@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboadComponent } from './dashboad/dashboad.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+import { RegisteredComponent } from './registered/registered.component'
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboadComponent
+    DashboadComponent,
+    RegisteredComponent
   ],
   imports: [
     BrowserModule,
